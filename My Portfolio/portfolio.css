@@ -4,9 +4,9 @@ html{
 
 .navbar{
     position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
     width: 250px;
     transition: all ease-in-out 0.5s;
     z-index: 9987;
@@ -25,7 +25,7 @@ html{
    color:white;
 }
 
-.div1{
+.main{
     font-size: 17px;
     font-family: century;
     color: beige;
@@ -43,7 +43,7 @@ html{
     gap: 10px;
 }  
    
-.div1 ul li{
+.main ul li{
     font-family: century;
     font-size: 1rem;
     /* font-weight: bold; */
@@ -51,14 +51,14 @@ html{
     padding: 12px;
 }
 
-.div1 ul li a{
+.main ul li a{
     text-decoration: none;
     color: white;
     align-items: center;
     /* transition: all .5s ease; */
 }
 
-.div1 ul li a:hover{
+.main ul li a:hover{
     color: cornflowerblue;
 }
 
@@ -78,14 +78,14 @@ html{
    height: 100vh;
    display: flex;
    flex-direction: column;
-   /* background: url("logo\wallpaper.jpg") top center; */
-   background-color: #569f56;;
    background-size: cover; 
 } 
 
 .name{
-    margin-left: 50%;
+    margin-left: 70%;
+    /* margin-right: 80px; */
     margin-top: 20%;
+    /* right: 80px; */
     color:black;
     font-size: large;   
 }
@@ -93,18 +93,20 @@ html{
 .name::before{
     content:"";
     position:absolute;
-    top:0;
-    right: 0;
-    background:url('laptop1.jpg') no-repeat center center/cover;
-    height: 700px;
-    width: 800px;
-    z-index:1;
+    top:0px;
+    left: 0px;
+    background:url('owner.png') no-repeat center center/cover;
+    height: 100vh;
+    width:100%;
+    background-size:contain;
+    z-index:-1;
 }
 
 #about{
     display: flex;
     flex-direction: column;
-    background:url("logo\laptop1.jpg");
+    background:url("laptop1.jpg");
+    opacity: 0.9;
     width: 100%;
     height: 100vh;
     background-color: burlywood;
@@ -114,9 +116,44 @@ html{
     margin-top: 18%;
     margin-left: 23%;
     font-size: large;
-    
+    color: rgb(254, 194, 104);
 }
 
+#technical{
+   display: flex;
+   flex-direction: column;
+   margin-left: 22%;
+   background-color: rgb(80, 96, 66);
+   height: 100vh;
+ }
+
+ .technical1{
+    margin-left:5%;
+ }
+
+ .paragraph{
+    color: rgb(255, 255, 255);
+ }
+ .container {
+    /* width: 100%; */
+    background-color: rgb(255, 244, 244);
+  }
+  
+  .skills {
+    text-align: right;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    color: white;
+ }
+  
+  .html {width: 90%; height: 15px; background-color: #2196F3;}
+  .css {width: 80%;  height: 15px; background-color: #2196F3;}
+  .js {width: 65%;  height: 15px; background-color:#2196F3;}
+  .php {width: 60%; height: 15px;  background-color:#2196F3;}
+  .git {width: 60%; height: 15px;  background-color:#2196F3;}
+
+
+ 
 .image{
     margin: 5px;
     padding: 5px;
@@ -164,3 +201,4 @@ html{
     border: 1px solid black;
  }
 
+ 
