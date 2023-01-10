@@ -1,4 +1,5 @@
 *{
+   
     box-sizing: border-box;
 }
 
@@ -17,10 +18,18 @@ html{
     transition: all ease-in-out 0.5s;
     z-index: 9987;
     transition: all 0.5s;
-    padding: 0 15px;
+     /* margin: 2px;   */
+    padding: 0 10px;
     background: #040b14;
-    overflow-y: auto; 
+     overflow-y: auto; 
 }
+.footer{
+    margin-left:40px;
+    font-size: small;
+   margin-top:50%;
+   color:white;
+}
+
 
 .para{
     overflow-inline: inherit;
@@ -104,6 +113,7 @@ html{
    height: 100vh;
    display: flex;
    flex-direction: column;
+   flex-wrap: wrap;
    background-size: cover; 
 } 
 
@@ -149,7 +159,7 @@ html{
 #technical{
    display: flex;
    flex-direction: column;
-   margin-left: 22%;
+   margin-left: 20%;
    background-color: rgb(80, 96, 66);
    height: 100vh;
  }
